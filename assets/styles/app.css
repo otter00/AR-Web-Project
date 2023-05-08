@@ -300,6 +300,10 @@ body {
   width: 100%;
   height: 75vh;
 }
+.slideshow__img:hover {
+  scale: 1.15;
+  transition: 0.5s;
+}
 
 .slideshow__text {
   position: absolute;
@@ -356,14 +360,20 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
-.movies__anime, .movies__popular, .movies__fantastika, .movies__drama {
+.movies .trade,
+.movies .education,
+.movies .health,
+.movies .military {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  margin: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5vh 5vw;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
+  border: 3px dotted rgba(132, 77, 142, 0.5);
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .movie {
@@ -1081,6 +1091,11 @@ form .row .col-2 {
   list-style: none;
   margin: 0px 0px 0px 20px;
   text-transform: uppercase;
+}
+.header__list li:hover {
+  scale: 1.15;
+  transition: 0.5s;
+  text-decoration: overline;
 }
 
 .header__link {
