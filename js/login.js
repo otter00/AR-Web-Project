@@ -65,7 +65,7 @@ button.addEventListener('click', ()=>{
         alert(`Welcome, ${document.getElementById("email__input").value}`);
         location.reload();//перезагружаем страницу, если всё введено корректно, 
         //чтобы очистить поля для дальнейшего ввода
-        window.location.href = 'htmls/main.html';
+        //window.location.href = 'htmls/main.html';
     }
 
     errors = []; //чистим массив

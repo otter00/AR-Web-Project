@@ -12,12 +12,20 @@ body {
 .locations__container {
     padding: 15vh 5vw;
 
+    .stat__title {
+        color: $main-color;
+        @include flex-center;
+        margin-top: 10vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+
     .trading__stat {
-        display: flex;
-        justify-content: center;
+        @include flex-center;
 
         .stat__img {
-            margin-top: 20vh;
+            margin-top: 5vh;
             width: 70%;
             opacity: 0.8;
         }
@@ -32,7 +40,7 @@ body {
 .movies {
     width: 100%;
     margin: 0 auto;
-    font-family: 'Delicious Handrawn';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 
     &__popular {
@@ -62,26 +70,29 @@ body {
 
     &__year,
     &__rating {
-        font-family: 'Delicious Handrawn';
-        font-size: 1.5em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3em;
         margin-bottom: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 
     &__link {
         text-decoration: none;
         border-radius: 5px;
         padding: 13px;
-        background-color:
-            rgba(156, 201, 215, 0.67);
+        background:
+            linear-gradient(114.23deg, #1b1b1b 5%, rgba(84, 60, 95, 0.9) 100%, #9656a8 25%);
         color: $main-color;
     }
 
     &__link:hover {
-        background-color: #494949;
+        background:
+            linear-gradient(114.23deg, #1b1b1b 5%, rgba(84, 60, 95, 0.9) 100%, #4d38ba 25%);
     }
 
     &__description {
-        margin: 20px 50px;
+        margin: 20px 50px 30px 20px;
     }
 }
 
@@ -100,7 +111,8 @@ body {
     font-size: 1.1em;
     font-style: normal;
     overflow: auto;
-    background-color: #475F66;
+    background-color: #6d6c71bf;
+    border: 1px solid $main-color;
     border-radius: 30px;
     width: 50%;
     height: 70%;
@@ -111,5 +123,6 @@ body {
 }
 
 .movie2 .movie__name {
+    text-transform: uppercase;
     margin-bottom: 30px;
 }

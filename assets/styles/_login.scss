@@ -4,12 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
 
 @font-face {
-    font-family: "BELLABIO";
-    src: url(../fonts/Bellabio/Bellabio\ Regular.ttf);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html {
-    font-family: 'Gugi', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 1600px;
     min-width: 300px;
     margin: 0 auto;
@@ -71,7 +70,8 @@ h2 {
     padding: 15px;
 
     /*      BG-POSITIONING     */
-    background: #2D474F;
+    //background: #2D474F;
+    background: linear-gradient(114.23deg, #1b1b1b 15%, rgba(88, 61, 162, 0.7) 100%, #37147c 30%);
 
     .login-form__wrapper {
         width: 500px;
@@ -94,6 +94,8 @@ h2 {
                 .login-form__close-button {
                     display: block;
                     float: right;
+                    opacity: 0.5;
+                    ;
 
                     &:hover {
                         cursor: pointer;
@@ -102,11 +104,11 @@ h2 {
 
                 .logo-img {
                     margin-left: 10px;
-                    max-width: 30%;
+                    max-width: 40%;
                 }
 
                 .logo-img__text {
-                    font-family: BELLABIO;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
                     color: $main-color;
                     font-weight: 600;
                     font-size: 21px;
@@ -116,6 +118,7 @@ h2 {
                     margin-top: 15px;
                     text-align: center;
                     width: 100%;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -138,11 +141,13 @@ h2 {
         border-radius: 20px;
 
         &.facebook-connection {
-            background-color: $facebook-color;
+            background-color: rgba(157, 150, 150, 0.662);
+            border: 1px solid rgba(255, 255, 255, 0.507);
         }
 
         &.google-connection {
-            background-color: $main-color;
+            background-color: rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.716);
 
             .social-nets__text {
                 color: black;
@@ -172,7 +177,7 @@ h2 {
         &.line {
             height: 2px;
             border: none;
-            background-color: $main-color;
+            background-color: rgba(255, 255, 255, 0.3);
         }
     }
 
@@ -209,9 +214,11 @@ h2 {
         align-self: center;
         width: 90%;
         margin: auto;
-        background: $main-color;
+        background: rgba(2, 23, 0, 0.3);
         padding: 10px 0;
         border-radius: 10px;
+        border: 1px solid rgba(238, 238, 238, 0.477);
+
 
         figure {
             margin-top: 3px;
@@ -243,9 +250,10 @@ h2 {
                 background: 0 0;
                 padding: 0 10px 0 8px;
                 transition: all .4s;
+                color: rgba(255, 255, 255, 0.3);
 
                 &::-webkit-input-placeholder {
-                    color: rgba(2, 23, 0, 0.3);
+                    color: rgba(255, 255, 255, 0.3);
                 }
 
                 &:focus::-webkit-input-placeholder {
@@ -266,7 +274,7 @@ h2 {
 
     .login-form__btn {
         font-size: 16px;
-        color: #2D474F;
+        color: $main-color;
         text-transform: uppercase;
         display: flex;
         justify-content: center;
@@ -275,8 +283,9 @@ h2 {
         min-width: 130px;
         height: 42px;
         border-radius: 21px;
+        border: 1px solid rgba(255, 255, 255, 0.593);
         position: relative;
-        background: $main-color;
+        background: rgba(255, 255, 255, 0.3);
         font-weight: 700;
 
         &:hover {

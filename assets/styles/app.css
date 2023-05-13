@@ -1,11 +1,10 @@
 /*      GENERAL     */
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap");
 @font-face {
-  font-family: "BELLABIO";
-  src: url(../fonts/Bellabio/Bellabio\ Regular.ttf);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html {
-  font-family: "Gugi", cursive;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   max-width: 1600px;
   min-width: 300px;
   margin: 0 auto;
@@ -61,7 +60,7 @@ h2 {
   align-items: center;
   padding: 15px;
   /*      BG-POSITIONING     */
-  background: #2D474F;
+  background: linear-gradient(114.23deg, #1b1b1b 15%, rgba(88, 61, 162, 0.7) 100%, #37147c 30%);
 }
 .login-form__container .login-form__wrapper {
   width: 500px;
@@ -81,16 +80,17 @@ h2 {
 .login-form__container .login-form__wrapper .login-form__title .login-form__picture .login-form__close-button {
   display: block;
   float: right;
+  opacity: 0.5;
 }
 .login-form__container .login-form__wrapper .login-form__title .login-form__picture .login-form__close-button:hover {
   cursor: pointer;
 }
 .login-form__container .login-form__wrapper .login-form__title .login-form__picture .logo-img {
   margin-left: 10px;
-  max-width: 30%;
+  max-width: 40%;
 }
 .login-form__container .login-form__wrapper .login-form__title .login-form__picture .logo-img__text {
-  font-family: BELLABIO;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-weight: 600;
   font-size: 21px;
@@ -100,6 +100,7 @@ h2 {
   margin-top: 15px;
   text-align: center;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .login-form {
@@ -118,10 +119,12 @@ h2 {
   border-radius: 20px;
 }
 .login-form .social-nets.facebook-connection {
-  background-color: #185DAE;
+  background-color: rgba(157, 150, 150, 0.662);
+  border: 1px solid rgba(255, 255, 255, 0.507);
 }
 .login-form .social-nets.google-connection {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.716);
 }
 .login-form .social-nets.google-connection .social-nets__text {
   color: black;
@@ -145,7 +148,7 @@ h2 {
 .login-form .above-input.line {
   height: 2px;
   border: none;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .login-form .under-button,
 .login-form .under-wrap {
@@ -175,9 +178,10 @@ h2 {
   align-self: center;
   width: 90%;
   margin: auto;
-  background: white;
+  background: rgba(2, 23, 0, 0.3);
   padding: 10px 0;
   border-radius: 10px;
+  border: 1px solid rgba(238, 238, 238, 0.477);
 }
 .login-form .wrap-input figure {
   margin-top: 3px;
@@ -205,9 +209,10 @@ h2 {
   background: 0 0;
   padding: 0 10px 0 8px;
   transition: all 0.4s;
+  color: rgba(255, 255, 255, 0.3);
 }
 .login-form .wrap-input.validate-input .input::-webkit-input-placeholder {
-  color: rgba(2, 23, 0, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 .login-form .wrap-input.validate-input .input:focus::-webkit-input-placeholder {
   color: transparent;
@@ -223,7 +228,7 @@ h2 {
 }
 .container-login-form__btn .login-form__btn {
   font-size: 16px;
-  color: #2D474F;
+  color: white;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -232,8 +237,9 @@ h2 {
   min-width: 130px;
   height: 42px;
   border-radius: 21px;
+  border: 1px solid rgba(255, 255, 255, 0.593);
   position: relative;
-  background: white;
+  background: rgba(255, 255, 255, 0.3);
   font-weight: 700;
 }
 .container-login-form__btn .login-form__btn:hover {
@@ -467,6 +473,11 @@ body {
     margin: 20px 10px;
   }
 }
+a {
+  text-decoration: none;
+  color: white;
+}
+
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -479,12 +490,21 @@ body {
 .locations__container {
   padding: 15vh 5vw;
 }
+.locations__container .stat__title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  text-decoration: underline;
+}
 .locations__container .trading__stat {
   display: flex;
   justify-content: center;
 }
 .locations__container .trading__stat .stat__img {
-  margin-top: 20vh;
+  margin-top: 5vh;
   width: 70%;
   opacity: 0.8;
 }
@@ -496,7 +516,7 @@ body {
 .movies {
   width: 100%;
   margin: 0 auto;
-  font-family: "Delicious Handrawn";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
 .movies__popular {
@@ -522,22 +542,24 @@ body {
   box-shadow: 2px 2px 2px 2px #b2c0c0;
 }
 .movie__year, .movie__rating {
-  font-family: "Delicious Handrawn";
-  font-size: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3em;
   margin-bottom: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .movie__link {
   text-decoration: none;
   border-radius: 5px;
   padding: 13px;
-  background-color: rgba(156, 201, 215, 0.67);
+  background: linear-gradient(114.23deg, #1b1b1b 5%, rgba(84, 60, 95, 0.9) 100%, #9656a8 25%);
   color: white;
 }
 .movie__link:hover {
-  background-color: #494949;
+  background: linear-gradient(114.23deg, #1b1b1b 5%, rgba(84, 60, 95, 0.9) 100%, #4d38ba 25%);
 }
 .movie__description {
-  margin: 20px 50px;
+  margin: 20px 50px 30px 20px;
 }
 
 .movie2 {
@@ -555,7 +577,8 @@ body {
   font-size: 1.1em;
   font-style: normal;
   overflow: auto;
-  background-color: #475F66;
+  background-color: rgba(109, 108, 113, 0.7490196078);
+  border: 1px solid white;
   border-radius: 30px;
   width: 50%;
   height: 70%;
@@ -566,6 +589,7 @@ body {
 }
 
 .movie2 .movie__name {
+  text-transform: uppercase;
   margin-bottom: 30px;
 }
 
