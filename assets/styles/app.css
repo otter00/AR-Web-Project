@@ -281,6 +281,10 @@ body {
   background: linear-gradient(114.23deg, #1b1b1b 15%, rgba(84, 60, 95, 0.7) 15%, #1b1b1b 15%);
 }
 
+.container {
+  padding-bottom: 50px;
+}
+
 .slideshow__container {
   display: flex;
   flex-direction: column;
@@ -485,6 +489,7 @@ a {
 body {
   background: linear-gradient(114.23deg, #1b1b1b 15%, rgba(84, 60, 95, 0.7) 15%, #1b1b1b 15%);
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .locations__container {
@@ -498,6 +503,11 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
   text-decoration: underline;
+}
+.locations__container .stat__title:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  transition: 1s;
 }
 .locations__container .trading__stat {
   display: flex;
@@ -540,6 +550,7 @@ body {
 }
 .movie__img:hover {
   box-shadow: 2px 2px 2px 2px #b2c0c0;
+  transition: 0.5s;
 }
 .movie__year, .movie__rating {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -776,6 +787,12 @@ body {
 .hero__container {
   width: 100%;
   height: 80vh;
+  display: flex;
+  justify-content: center;
+  margin: 20vh 0 7vh 0;
+}
+.hero__container .hero__img {
+  width: 70%;
 }
 
 .studios__container,
@@ -815,9 +832,29 @@ body {
 .studios-search__container .database__container .database__input .db-table td {
   padding-right: 10px;
 }
-.studios__container .database__container .database__input .db-table input:hover,
-.studios-search__container .database__container .database__input .db-table input:hover {
-  background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+.studios__container .database__container .database__input .db-table input,
+.studios__container .database__container .database__input .db-table textarea,
+.studios-search__container .database__container .database__input .db-table input,
+.studios-search__container .database__container .database__input .db-table textarea {
+  background: linear-gradient(114.23deg, #a59a9a 14.64%, rgba(118, 114, 114, 0.7) 47.07%, #475F66 80.65%);
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0.5;
+  width: 25vw;
+}
+.studios__container .database__container .database__input .db-table input,
+.studios-search__container .database__container .database__input .db-table input {
+  height: 40px;
+}
+.studios__container .database__container .database__input .db-table textarea,
+.studios-search__container .database__container .database__input .db-table textarea {
+  height: 80px;
+  margin-bottom: 20px;
+}
+.studios__container .database__container .database__input .db-table .button__send,
+.studios-search__container .database__container .database__input .db-table .button__send {
+  display: flex;
+  justify-content: center;
 }
 .studios__container .database__container .database__input .db-table #btnInsert,
 .studios__container .database__container .database__input .db-table #btnDelete,
@@ -828,14 +865,15 @@ body {
   color: white;
   border-radius: 10px;
   letter-spacing: 2px;
-  background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+  border: 1px solid rgba(86, 82, 82, 0.537);
+  background: linear-gradient(114.23deg, #1c1c1c 14.64%, rgba(30, 53, 101, 0.7) 47.07%, #412d48 80.65%);
 }
 .studios__container .database__container .database__input .db-table #btnInsert:hover,
 .studios__container .database__container .database__input .db-table #btnDelete:hover,
 .studios-search__container .database__container .database__input .db-table #btnInsert:hover,
 .studios-search__container .database__container .database__input .db-table #btnDelete:hover {
   cursor: pointer;
-  background: linear-gradient(114.23deg, #1a1515 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
+  background: linear-gradient(114.23deg, #373261 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
 }
 .studios__container .database__container .database__list #tblGrid,
 .studios-search__container .database__container .database__list #tblGrid {

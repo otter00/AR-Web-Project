@@ -7,6 +7,7 @@
 body {
     background: linear-gradient(114.23deg, #1b1b1b 15%, rgba(84, 60, 95, 0.7) 15%, #1b1b1b 15%);
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .locations__container {
@@ -19,6 +20,12 @@ body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 300;
         text-decoration: underline;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.15);
+            transition: 1s;
+        }
     }
 
     .trading__stat {
@@ -66,6 +73,7 @@ body {
 
     &__img:hover {
         box-shadow: 2px 2px 2px 2px #b2c0c0;
+        transition: 0.5s;
     }
 
     &__year,

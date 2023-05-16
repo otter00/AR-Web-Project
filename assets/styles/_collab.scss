@@ -3,6 +3,13 @@
 .hero__container {
     width: 100%;
     height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin: 20vh 0 7vh 0;
+
+    .hero__img {
+        width: 70%;
+    }
 }
 
 .studios__container,
@@ -42,8 +49,28 @@
                     padding-right: 10px;
                 }
 
-                input:hover {
-                    background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+                input,
+                textarea {
+                    background: linear-gradient(114.23deg, #a59a9a 14.64%, rgba(118, 114, 114, 0.7) 47.07%, #475F66 80.65%);
+                    padding: 10px;
+                    border-radius: 10px;
+                    opacity: 0.5;
+
+                    width: 25vw;
+                }
+
+                input {
+                    height: 40px;
+                }
+
+                textarea {
+                    height: 80px;
+                    margin-bottom: 20px;
+                }
+
+                .button__send {
+                    display: flex;
+                    justify-content: center;
                 }
 
                 #btnInsert,
@@ -53,11 +80,12 @@
                     color: $main-color;
                     border-radius: 10px;
                     letter-spacing: 2px;
-                    background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+                    border: 1px solid rgba(86, 82, 82, 0.537);
+                    background: linear-gradient(114.23deg, #1c1c1c 14.64%, rgba(30, 53, 101, 0.7) 47.07%, #412d48 80.65%);
 
                     &:hover {
                         cursor: pointer;
-                        background: linear-gradient(114.23deg, #1a1515 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
+                        background: linear-gradient(114.23deg, #373261 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
                     }
                 }
             }
