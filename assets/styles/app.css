@@ -822,11 +822,38 @@ body {
   border: none;
 }
 .studios__container .database__container,
+.studios__container .database__list,
+.studios-search__container .database__container,
+.studios-search__container .database__list {
+  margin: 40px;
+}
+.studios__container .database__list #tblGrid,
+.studios-search__container .database__list #tblGrid {
+  margin: auto;
+  border: 1px solid white;
+  background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+}
+.studios__container .database__list #tblGrid tbody,
+.studios-search__container .database__list #tblGrid tbody {
+  display: block;
+  margin: 10px 5px 10px 5px;
+}
+.studios__container .database__list #tblGrid tr,
+.studios-search__container .database__list #tblGrid tr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.studios__container .database__list #tblGrid .body__row > td,
+.studios-search__container .database__list #tblGrid .body__row > td {
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 20px;
+}
+.studios__container .database__container,
 .studios-search__container .database__container {
   display: grid;
-  grid-template-columns: 37% 60%;
   gap: 3%;
-  margin: 40px;
+  grid-template-columns: 37% 60%;
 }
 .studios__container .database__container .database__input .db-table td,
 .studios-search__container .database__container .database__input .db-table td {
@@ -874,22 +901,6 @@ body {
 .studios-search__container .database__container .database__input .db-table #btnDelete:hover {
   cursor: pointer;
   background: linear-gradient(114.23deg, #373261 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
-}
-.studios__container .database__container .database__list #tblGrid,
-.studios-search__container .database__container .database__list #tblGrid {
-  display: block;
-  border: 1px solid white;
-  background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
-}
-.studios__container .database__container .database__list #tblGrid tbody,
-.studios-search__container .database__container .database__list #tblGrid tbody {
-  display: block;
-  margin: 10px 5px 10px 25px;
-}
-.studios__container .database__container .database__list #tblGrid tr,
-.studios-search__container .database__container .database__list #tblGrid tr {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .search__container {

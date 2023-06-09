@@ -37,11 +37,39 @@
         border: none;
     }
 
+    .database__container,
+    .database__list {
+        margin: 40px;
+    }
+
+    .database__list {
+        #tblGrid {
+            margin: auto;
+            border: 1px solid $main-color;
+            background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+
+            tbody {
+                display: block;
+                margin: 10px 5px 10px 5px;
+            }
+
+            tr {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .body__row>td {
+                border: 1px solid $main-color;
+                padding: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+
     .database__container {
         display: grid;
-        grid-template-columns: 37% 60%;
         gap: 3%;
-        margin: 40px;
+        grid-template-columns: 37% 60%;
 
         .database__input {
             .db-table {
@@ -87,24 +115,6 @@
                         cursor: pointer;
                         background: linear-gradient(114.23deg, #373261 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
                     }
-                }
-            }
-        }
-
-        .database__list {
-            #tblGrid {
-                display: block;
-                border: 1px solid $main-color;
-                background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
-
-                tbody {
-                    display: block;
-                    margin: 10px 5px 10px 25px;
-                }
-
-                tr {
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
                 }
             }
         }

@@ -33,11 +33,31 @@ insertButton.addEventListener('click', ()=>{
     var name = document.getElementById("tbName").value;    
     var phone = document.getElementById("tbPhone").value;  
     var email = document.getElementById("tbEmail").value;  
-    var message = document.getElementById("tbMessage").value;    
+    var message = document.getElementById("tbMessage").value;   
+
     dbObj.transaction(function (tx) {    
         tx.executeSql('insert into Collab_Table(Phone, Email, Message, Name) values(' + phone + ',"' + email + '","' + message + '","' + name + '")');    
     }); 
+
+    console.log(`${name}, ${phone}, ${email}, ${message}`);
 });  
+
+dbObj.transaction(function (tx) {    
+    tx.executeSql('SELECT * FROM Collab_Table', [], function (tx, results) {    
+        var len = results.rows.length, i;    
+        var str = '';    
+        for (i = 0; i < len; i++) {    
+        str += "<tr class=body__row>";    
+        str += "<td>" + results.rows.item(i).Name + "</td>";    
+        str += "<td>" + results.rows.item(i).Phone + "</td>";    
+        str += "<td>" + results.rows.item(i).Email + "</td>";   
+        str += "<td>" + results.rows.item(i).Message + "</td>"; 
+        str += "</tr>";    
+        document.getElementById("tblGrid").innerHTML += str;    
+        str = '';    
+        }    
+    }, null);    
+});
 
 // const deleteButton = document.querySelector('#btnDelete');
 // deleteButton.addEventListener('click', ()=>{
