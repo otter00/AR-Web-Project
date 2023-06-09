@@ -18,12 +18,14 @@ const JsonLoc = `[{
     "url":"https://i.ytimg.com/vi/b2vmCToGZJc/maxresdefault.jpg"
 }]`;
 
+
 //Ссылка на payment.html в JSON'е, по-другому добавление через js не работает 
 var guideRedirectLink = `[{
     "link": "../htmls/main.html"
 }]`;
 
 document.addEventListener('DOMContentLoaded', (e)=>{
+
     const locations = JSON.parse(JsonLoc);
     console.log(locations.length);
     let moviesContent = "";

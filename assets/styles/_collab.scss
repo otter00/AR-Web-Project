@@ -38,8 +38,47 @@
     }
 
     .database__container,
-    .database__list {
+    .database__list,
+    .gif__search,
+    .search__container {
         margin: 40px;
+    }
+
+    .search__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .gif__search {
+        margin: auto;
+
+        h1 {
+            margin: 5vh 0;
+        }
+
+        input {
+            background: linear-gradient(114.23deg, #a59a9a 14.64%, rgba(118, 114, 114, 0.7) 47.07%, #475F66 80.65%);
+            padding: 10px;
+            border-radius: 10px;
+            opacity: 0.5;
+
+            width: 25vw;
+        }
+
+        #btnSubmit {
+            width: 8em;
+            height: 4em;
+            color: $main-color;
+            border-radius: 10px;
+            letter-spacing: 2px;
+            border: 1px solid rgba(86, 82, 82, 0.537);
+            background: linear-gradient(114.23deg, #1c1c1c 14.64%, rgba(30, 53, 101, 0.7) 47.07%, #412d48 80.65%);
+
+            &:hover {
+                cursor: pointer;
+                background: linear-gradient(114.23deg, #373261 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
+            }
+        }
     }
 
     .database__list {

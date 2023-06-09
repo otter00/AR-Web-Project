@@ -823,9 +823,49 @@ body {
 }
 .studios__container .database__container,
 .studios__container .database__list,
+.studios__container .gif__search,
+.studios__container .search__container,
 .studios-search__container .database__container,
-.studios-search__container .database__list {
+.studios-search__container .database__list,
+.studios-search__container .gif__search,
+.studios-search__container .search__container {
   margin: 40px;
+}
+.studios__container .search__container,
+.studios-search__container .search__container {
+  display: flex;
+  justify-content: center;
+}
+.studios__container .gif__search,
+.studios-search__container .gif__search {
+  margin: auto;
+}
+.studios__container .gif__search h1,
+.studios-search__container .gif__search h1 {
+  margin: 5vh 0;
+}
+.studios__container .gif__search input,
+.studios-search__container .gif__search input {
+  background: linear-gradient(114.23deg, #a59a9a 14.64%, rgba(118, 114, 114, 0.7) 47.07%, #475F66 80.65%);
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0.5;
+  width: 25vw;
+}
+.studios__container .gif__search #btnSubmit,
+.studios-search__container .gif__search #btnSubmit {
+  width: 8em;
+  height: 4em;
+  color: white;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  border: 1px solid rgba(86, 82, 82, 0.537);
+  background: linear-gradient(114.23deg, #1c1c1c 14.64%, rgba(30, 53, 101, 0.7) 47.07%, #412d48 80.65%);
+}
+.studios__container .gif__search #btnSubmit:hover,
+.studios-search__container .gif__search #btnSubmit:hover {
+  cursor: pointer;
+  background: linear-gradient(114.23deg, #373261 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
 }
 .studios__container .database__list #tblGrid,
 .studios-search__container .database__list #tblGrid {

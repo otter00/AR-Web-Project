@@ -156,9 +156,3 @@ movieContainer.addEventListener('click', (event) => {
         }
     }
 })
-
-// const paymentRedirect = document.querySelector('.movie__link');
-// paymentRedirect.addEventListener('click', (e)=>{
-//     location.reload();
-//     window.location.href = '../htmls/payment.html';
-// });

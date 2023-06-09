@@ -24,28 +24,6 @@ for (block of blocks) {
         priceOnBlock3.style.display = "none";
     })
 }
-// paymentBlock1.addEventListener('mouseover', function(){
-//     document.querySelector('.payment__on-click').style.display = "block";
-// })
-// paymentBlock1.addEventListener('mouseleave', function(){
-//     document.querySelector('.payment__on-click').style.display = "none";
-// })
-
-// paymentBlock2.addEventListener('mouseover', function(){
-//     document.querySelector('.payment__on-click2').style.display = "block";
-// })
-// paymentBlock2.addEventListener('mouseleave', function(){
-//     document.querySelector('.payment__on-click2').style.display = "none";
-// })
-
-// paymentBlock3.addEventListener('mouseover', function(){
-//     document.querySelector('.payment__on-click3').style.display = "block";
-// })
-// paymentBlock3.addEventListener('mouseleave', function(){
-//     document.querySelector('.payment__on-click3').style.display = "none";
-// })
-
-
 const packageName = document.querySelector('.main-block__package-name-js')
 const valideDate = document.querySelector('.main-block__valid-date-js')
 const ExpiryDate = document.querySelector('.main-block__exp-date-js');
@@ -63,9 +41,6 @@ let week = moment().add(7, 'days').calendar()
 let month = moment().add(1, 'months').calendar()
 console.log(tomorrow)
 
-// let tomorrow = new Date(today.getTime() + (24 * 60 * 60 * 1000));
-// let oneWeek = new Date(today.getTime() + (7*24 * 60 * 60 * 1000));
-// let oneMonth = new Date(today.getTime() + (30*24 * 60 * 60 * 1000));
 
     //возвращаемся к первому шагу и очищаем инпут
     const firstStepBlock = document.querySelector('.payment__first-step')
